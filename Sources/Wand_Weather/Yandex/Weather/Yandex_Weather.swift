@@ -106,7 +106,7 @@ func | (ask: Ask<Yandex_Weather>) -> Core {
         ask.handler($0)
     }
 
-    guard wand.append(ask: ask) else {
+    guard wand + ask else {
         return wand
     }
 

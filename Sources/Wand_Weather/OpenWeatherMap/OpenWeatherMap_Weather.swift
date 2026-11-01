@@ -111,7 +111,7 @@ func | (ask: Ask<OpenWeatherMap_Weather>) -> Core {
     }
 
     //Save ask
-    guard wand.append(ask: ask) else {
+    guard wand + ask else {
         return wand
     }
 

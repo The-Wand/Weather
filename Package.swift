@@ -1,15 +1,12 @@
-// swift-tools-version: 5.6
-
+// swift-tools-version: 5.9
 ///
-/// Copyright © 2020-2024 El Machine 🤖
-/// https://el-machine.com/
+/// Copyright 2020 Aleksander Kozin
 ///
 /// Licensed under the Apache License, Version 2.0 (the "License");
 /// you may not use this file except in compliance with the License.
 /// You may obtain a copy of the License at
 ///
-/// 1) LICENSE file
-/// 2) https://apache.org/licenses/LICENSE-2.0
+///     http://www.apache.org/licenses/LICENSE-2.0
 ///
 /// Unless required by applicable law or agreed to in writing, software
 /// distributed under the License is distributed on an "AS IS" BASIS,
@@ -17,8 +14,8 @@
 /// See the License for the specific language governing permissions and
 /// limitations under the License.
 ///
-/// Created by Alex Kozin
-/// 2020 El Machine
+/// Created by Aleksander Kozin
+/// The Wand
 
 import PackageDescription
 
@@ -29,6 +26,7 @@ let package = Package(
         .iOS(.v14),
         .macOS(.v12),
         .tvOS(.v14),
+//        .visionOS(.v1),
         .watchOS(.v7),
     ],
 
@@ -38,10 +36,10 @@ let package = Package(
 
     dependencies: [
         .package(url: "https://github.com/the-wand/Any.git", from: "1.0.3"),
-        .package(url: "https://github.com/the-wand/Wand.git", from: "3.0.5"),
+        .package(url: "https://github.com/the-wand/Wand.git", from: "5.0.0"),
 
-        .package(url: "https://github.com/the-wand/Location.git", from: "3.0.5"),
-        .package(url: "https://github.com/the-wand/URL.git", from: "3.0.5"),
+        .package(url: "https://github.com/the-wand/Location.git", from: "5.0.0"),
+        .package(url: "https://github.com/the-wand/URL.git", from: "5.0.0"),
     ],
 
     targets: [
@@ -58,5 +56,7 @@ let package = Package(
                             .product(name: "Any_", package: "Any")
                         ]
                    )
-    ]
+    ],
+    
+    swiftLanguageVersions: [.v5]
 )

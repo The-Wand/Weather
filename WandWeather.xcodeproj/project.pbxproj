@@ -20,8 +20,6 @@
 		617C7D1E2C1856C200FFEA14 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 617C7D152C1856C200FFEA14 /* XCTestCase.swift */; };
 		617C7D1F2C1856C200FFEA14 /* Package.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 617C7D172C1856C200FFEA14 /* Package.xctestplan */; };
 		617C7D202C1856C200FFEA14 /* Package.xctestplan in Resources */ = {isa = PBXBuildFile; fileRef = 617C7D172C1856C200FFEA14 /* Package.xctestplan */; };
-		619435982C0E015C0034554B /* Any_ in Frameworks */ = {isa = PBXBuildFile; productRef = 619435972C0E015C0034554B /* Any_ */; };
-		6194359B2C0E01600034554B /* Any_ in Frameworks */ = {isa = PBXBuildFile; productRef = 6194359A2C0E01600034554B /* Any_ */; };
 		61E4A3CB2C296828008482D4 /* Chain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618363BA2C2444F1007E2CD9 /* Chain.swift */; };
 		61F648C72BEA122900C2625C /* Wand_Weather in Frameworks */ = {isa = PBXBuildFile; productRef = 61F648C62BEA122900C2625C /* Wand_Weather */; };
 /* End PBXBuildFile section */
@@ -48,7 +46,7 @@
 		613966482BE0F87A004C18A3 /* watchPlayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watchPlayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		615158E82BF761DC001646EA /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		615158E92BF761DC001646EA /* watchInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = watchInfo.plist; sourceTree = "<group>"; };
-		615158EB2BF765A2001646EA /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		615158EB2BF765A2001646EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		615159052BF76666001646EA /* CONTRIB.TXT */ = {isa = PBXFileReference; lastKnownFileType = text; path = CONTRIB.TXT; sourceTree = "<group>"; };
 		615AE02D2C23EF8200D05E79 /* Yandex_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yandex_Tests.swift; sourceTree = "<group>"; };
 		6162624528BC8E2A00D63EA5 /* play.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = play.swift; sourceTree = "<group>"; };
@@ -85,7 +83,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6194359B2C0E01600034554B /* Any_ in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				619435982C0E015C0034554B /* Any_ in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				6162624428BC8E2A00D63EA5 /* App */,
-				615158EB2BF765A2001646EA /* info.plist */,
+				615158EB2BF765A2001646EA /* Info.plist */,
 				61B464E72BEB76B70064B4C1 /* Package.swift */,
 				61CAAD372C16D5020061DAA5 /* Package.resolved */,
 				612CA83D2C487D8A003C428B /* Sources */,
@@ -242,7 +238,6 @@
 			);
 			name = watchPlayTests;
 			packageProductDependencies = (
-				6194359A2C0E01600034554B /* Any_ */,
 			);
 			productName = WatchPlayTests;
 			productReference = 613966482BE0F87A004C18A3 /* watchPlayTests.xctest */;
@@ -283,7 +278,6 @@
 			);
 			name = wandTests;
 			packageProductDependencies = (
-				619435972C0E015C0034554B /* Any_ */,
 			);
 			productName = Tests;
 			productReference = 618D53D12BE3C5120098DB6F /* wandTests.xctest */;
@@ -317,7 +311,7 @@
 					};
 				};
 			};
-			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Wand_Weather" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "WandWeather" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -328,7 +322,6 @@
 			mainGroup = OBJ_5;
 			packageReferences = (
 				61A37BC52BE24B97007B7FEE /* XCLocalSwiftPackageReference "." */,
-				619435962C0E015C0034554B /* XCRemoteSwiftPackageReference "Any" */,
 			);
 			productRefGroup = OBJ_138 /* Products */;
 			projectDirPath = "";
@@ -1105,7 +1098,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_2 /* Build configuration list for PBXProject "Wand_Weather" */ = {
+		OBJ_2 /* Build configuration list for PBXProject "WandWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_3 /* Debug */,
@@ -1123,28 +1116,7 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		619435962C0E015C0034554B /* XCRemoteSwiftPackageReference "Any" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/el-machine/Any";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.1;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
-		619435972C0E015C0034554B /* Any_ */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 619435962C0E015C0034554B /* XCRemoteSwiftPackageReference "Any" */;
-			productName = Any_;
-		};
-		6194359A2C0E01600034554B /* Any_ */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 619435962C0E015C0034554B /* XCRemoteSwiftPackageReference "Any" */;
-			productName = Any_;
-		};
 		61F648C62BEA122900C2625C /* Wand_Weather */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 61A37BC52BE24B97007B7FEE /* XCLocalSwiftPackageReference "." */;

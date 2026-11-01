@@ -41,7 +41,7 @@ extension Weather: @retroactive Ask.T, @retroactive Wanded {
     func ask<C, T>(with scope: C, ask: Ask<T>) -> Core {
 
         let wand = Core.to(scope)
-        guard wand.append(ask: ask) else {
+        guard wand + ask else {
             return wand
         }
 
@@ -60,10 +60,10 @@ extension Weather: @retroactive Ask.T, @retroactive Wanded {
 
                 //Make request
                 let weather = try await service.weather(for: location)
-                wand.add(weather)
+                wand + weather
 
             } catch {
-                wand?.add(error)
+                wand + error
             }}
 
         }
